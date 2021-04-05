@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <div class="register-form-div">
+        <h1> Register form</h1>
+        <form id='register-form' method="post">
+            <label>Email
+                <input id='rinput-email' type="email" required />
+            </label>
+            <label>Name
+                <input id='rinput-name' type="text" required />
+            </label>
+            <label>Password
+                <input id='rinput-password' type="password" required />
+            </label>
+            <label>Confirm-Password
+                <input id='rinput-confirm-password' type="password" required />
+            </label>
+            <button type="button" onclick="Validations()">Create account</button>
+            <button type="button" onclick="resetForm()">Reset fields</button>
+            <a id='login-link' href="login.html">Back</a>
+            <div id="register-validation-div">
+                Validations
+            </div>
+        </form>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>
